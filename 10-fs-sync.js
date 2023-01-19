@@ -13,3 +13,7 @@ writeFileSync('./content/result-sync.txt', `Here is the result: ${first}, ${seco
 
 console.log('done with this task');
 console.log('starting this next one')
+
+//Javascript is reading this code synchronsly, line by line
+//JS is reading the code line by line, makes it so that if there is
+//multiple users only one task can be completed at a time

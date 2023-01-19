@@ -2,6 +2,8 @@
 
 const { readFile, writeFile } = require('fs');
 
+console.log("start");
+
 readFile('./content/first.txt', 'utf-8', (err,result) => {
     if(err) {
         console.log(err);
@@ -19,7 +21,14 @@ readFile('./content/first.txt', 'utf-8', (err,result) => {
                 console.log(err)
                 return;
             }
-            console.log(result)
+            console.log("Done with this task")
         })
     })
 })
+
+console.log("Starting the next task");
+
+//Doing function async approach, the moment we start a task
+//we can offload a task and start with the next one
+
+//Multiple users, once a task is started it can serve multiple users
